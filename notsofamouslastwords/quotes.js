@@ -24,4 +24,9 @@ const quotes = [
         "",
         "INSERT QUOTE HERE"
     ],
+    [
+        "TJZkillerMC",
+        "i'm minecraft cobblestone block",
+        "INSERT DESCRIPTION HERE"
+    ]
 ];
