@@ -21,7 +21,7 @@ const quotes = [
     ],
     [
         GUITAR,
-        "TEST",
-        "TEST"
+        "",
+        "INSERT QUOTE HERE"
     ],
 ];
