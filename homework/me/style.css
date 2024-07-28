@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(147, 170, 101);
+    font-family: Sarabun;
+}
+
+#main {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 60px;
+}
+
+#start-bar {
+    display: none;
+    place-items: center;
+    font-size: 20px;
+    background-color: rgb(118, 145, 63);
+    position: absolute;
+    width: 320px;
+    height: calc(90vh - 60px);
+    bottom: 60px;
+}
+
+img {
+    display: block;
+}
+
+#vid, #content {
+    z-index: 999;
+}
+
+#vid {
+    display: none;
+    top: 20px;
+    left: 200px;
+    position: fixed;
+    width: 200px;
+}
+
+#content {
+    display: none;
+    position: fixed;
+    width: 60vw;
+    left: 10vw;
+    top: 5vh;
+}
+
+#desktop, #folder-files {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(auto-fit, 100px);
+    padding: 15px;
+}
+
+#desktop > *, #folder-files > * {
+    display: grid;
+    place-items: center;
+    grid-template-rows: 0.7fr 0.3fr;
+}
+
+#desktop > *, #time, #folder-files > *, #folder-close, #folder-title {
+    user-select: none;
+}
+
+#folder-open {
+    display: none;
+    grid-template-rows: 40px 260px;
+    position: fixed;
+    top: 60px;
+    left: 60px;
+    width: 400px;
+    background-color: white;
+}
+
+#folder-files > *:hover {
+    background-color: rgb(220, 220, 220);
+    outline: 1px solid rgb(60, 60, 60);
+}
+
+#folder-bar {
+    display: grid;
+    grid-template-columns: 360px 40px;
+}
+
+#folder-title, #folder-close {
+    display: grid;
+    background-color: rgb(226, 226, 226);
+}
+
+#folder-title {
+    padding-top: 8px;
+    padding-left: 15px;
+}
+
+#folder-close {
+    place-items: center;
+    font-size: 20px;
+}
+
+#folder-close:hover {
+    background-color: red;
+    color: white;
+}
+
+#desktop > *:hover, #menu:hover, a:hover {
+    background-color: rgb(196, 224, 139);
+}
+
+#desktop > *:hover {
+    outline: 1px solid rgb(255, 255, 255);
+}
+
+#desktop > * img, #folder-files > * img {
+    width: 75%;
+}
+
+#desktop > * div, #folder-files > * img {
+    font-size: 16px;
+}
+
+#task-bar, #items {
+    height: 100%;
+}
+
+#task-bar {
+    display: grid;
+    grid-template-columns: 0.9fr 0.1fr;
+    background-color: rgb(57, 75, 21);
+}
+
+#time {
+    padding: 12px;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+
+#time div {
+    font-size: 14px;
+}
+
+#items {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 60px 260px 60px 60px 60px;
+    grid-template-rows: 1;
+}
+
+a {
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+
+#menu {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/logo.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+
+#menu:active {
+    background-color: rgb(214, 235, 176);
+}
+
+#search-bar {
+    font-family: Sarabun;
+    padding-left: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: 2px solid rgb(80, 80, 80);
+    border: none;
+    width: 256px;
+    height: 56px;
+}
+
+#search-bar:hover {
+    outline: 3px solid rgb(80, 80, 80);
+    width: 254px;
+    height: 54px;
+}
