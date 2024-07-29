@@ -34,16 +34,16 @@ img {
 
 #vid {
     display: none;
-    top: 20px;
-    left: 200px;
+    top: 5vh;
+    left: 25vw;
     position: fixed;
-    width: 200px;
+    height: 80vh;
 }
 
 #content {
     display: none;
     position: fixed;
-    width: 60vw;
+    height: 80vh;
     left: 10vw;
     top: 5vh;
 }

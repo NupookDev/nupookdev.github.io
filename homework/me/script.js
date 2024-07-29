@@ -61,6 +61,7 @@ const outsideThing = document.getElementById("main");
 
 {
     const TEXT_ICO = "images/text.png";
+    const PIC_ICO = "images/picture-ico.png"
 
     const FOLDERS_DATA = [
         [
@@ -68,6 +69,11 @@ const outsideThing = document.getElementById("main");
                 TEXT_ICO,
                 "เกียวกับผม",
                 "images/website - about me.png"
+            ],
+            [
+                TEXT_ICO,
+                "ติดต่อ",
+                "images/Contacts.png"
             ]
         ],
         [
@@ -80,6 +86,16 @@ const outsideThing = document.getElementById("main");
                 TEXT_ICO,
                 "วิชาที่ชอบ",
                 "images/Subject I like.png"
+            ],
+            [
+                PIC_ICO,
+                "ม.ต้น",
+                "images/glasses.jpg"
+            ],
+            [
+                PIC_ICO,
+                "กีฬาสี 2023",
+                "images/Color Sports.jpg"
             ]
         ],
         [
@@ -180,6 +196,8 @@ const outsideThing = document.getElementById("main");
                                 himCook = function() {
                                     contentImg.style.display = "none";
                                 }
+
+                                contentImg
                             } else {
                                 exclusiveVid.style.display = "block";
 
@@ -190,12 +208,12 @@ const outsideThing = document.getElementById("main");
                                 }
                             }
 
-                            function huh() {
+                            function huh(e) {
                                 outsideThing.removeEventListener("mousedown", huh);
                                 viewing = 1;
                                 himCook();
                             }
-
+                            
                             outsideThing.addEventListener("mousedown", huh);
                         }
                     }
